@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <nav class="nav-links">
+                <a href="index.html" >Αρχική</a>
+                <a href="bio.html">Βιογραφικό</a>
+                <a href="portfolio.html">Portfolio</a>
+                <a href="hobbies.html">Ενδιαφέροντα</a>
+                <a href="contact.html" class="active">Επικοινωνία</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="container2">
+            <h2>Επικοινώνησε μαζί μου</h2>
+
+            <form id="contactForm">
+                <label>Email</label>
+                <input type="text" id="email">
+
+                <label>Όνομα</label>
+                <input type="text" id="name">
+
+                <label>Μήνυμα</label>
+                <textarea id="message"></textarea>
+                <div class="char-count"><span id="chars">0</span>/100 χαρακτήρες</div>
+
+                <p class="error" id="errorMsg"></p>
+                <button type="submit">Αποστολή</button>
+            </form>
+            <div class="success" id="successMsg">Το μήνυμα στάλθηκε με επιτυχία!</div>
+        </div>
+
+    </main>
+<script src="contact.js"></script>
+</body>
+</html>
